@@ -15,8 +15,7 @@ reg_sram u0(.Data(Data), .Q(Q), .Clock(Clock),
 .WE(WE), .Address(Address));
 initial
 begin
- // sequential test patterns entered at
-neg edge Clock
+ // sequential test patterns entered at neg edge Clock
 data_in[0]=8'h00; data_out[0]=8'hxx;
 data_in[1]=8'h01; data_out[1]=8'h01;
 data_in[2]=8'h02; data_out[2]=8'h02;
